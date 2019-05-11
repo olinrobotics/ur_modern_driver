@@ -1,4 +1,7 @@
 # ur_modern_driver - Refactored
+
+This repository depends on [olinrobotics/universal_robot](https://github.com/olinrobotics/universal_robot). Please also clone that repository before compiling this package.
+
 [![Build Status](https://travis-ci.org/ros-industrial/ur_modern_driver.svg?branch=kinetic-devel)](https://travis-ci.org/ros-industrial/ur_modern_driver)
 [![license - apache 2.0](https://img.shields.io/:license-Apache%202.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)
 
