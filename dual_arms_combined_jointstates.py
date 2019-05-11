@@ -46,4 +46,4 @@ class CombinedJointStates:
 
 
 if __name__ == '__main__':
-    CombinedJointStates().publish()
+    CombinedJointStates(first_arm='/left_arm/joint_states', second_arm='/right_arm/joint_states').publish()
