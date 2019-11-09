@@ -1,12 +1,8 @@
 # ur_modern_driver - Refactored
-<<<<<<< HEAD
 
 This repository depends on [olinrobotics/universal_robot](https://github.com/olinrobotics/universal_robot). Please also clone that repository before compiling this package.
 
 [![Build Status](https://travis-ci.org/ros-industrial/ur_modern_driver.svg?branch=kinetic-devel)](https://travis-ci.org/ros-industrial/ur_modern_driver)
-=======
-[![Build Status](https://travis-ci.com/ros-industrial/ur_modern_driver.svg?branch=kinetic-devel)](https://travis-ci.com/ros-industrial/ur_modern_driver)
->>>>>>> 5c5abc3cb6b64df35f8bd1ff520b6e677e613b20
 [![license - apache 2.0](https://img.shields.io/:license-Apache%202.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)
 
 
@@ -208,4 +204,3 @@ Please cite the following report if using this driver
 
 
 The report can be downloaded from http://orbit.dtu.dk/en/publications/optimizing-the-universal-robots-ros-driver(20dde139-7e87-4552-8658-dbf2cdaab24b).html
-
