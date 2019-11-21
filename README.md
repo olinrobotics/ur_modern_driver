@@ -1,6 +1,19 @@
-# ur_modern_driver - Refactored
 
 This repository depends on [olinrobotics/universal_robot](https://github.com/olinrobotics/universal_robot). Please also clone that repository before compiling this package.
+
+For Xamyab robot, clone this package to your `catkin_ws/src` and run `catkin_make`. The command below connects with the real Xamyab robot:
+```javascript
+roslaunch ur_modern_driver xamyab_bringup.launch grippers:=3
+```
+You can look at the [launch/xamyab_bringup.launch](https://github.com/olinrobotics/ur_modern_driver/blob/hiro-xamyab/launch/xamyab_bringup.launch) and [launch/xamyab_ur_common.launch](https://github.com/olinrobotics/ur_modern_driver/blob/hiro-xamyab/launch/xamyab_ur_common.launch) to see how it works. One thing worth nothing is that the **launch/xamyab_ur_common.launch** at [line 89](https://github.com/olinrobotics/ur_modern_driver/blob/ae78cca57e27a92668697c28a24c9c5df7e914c2/launch/xamyab_ur_common.launch#L89) runs our custom [dual_arms_combined_jointstates.py](https://github.com/olinrobotics/ur_modern_driver/blob/hiro-xamyab/dual_arms_combined_jointstates.py) python script, which essentially combines all the joint_states of `[left_arm, right_arm, left_gripper, right_gripper]` and publish them to one `/joint_states` topic.
+
+**Related documentation:**
+- [MoveIt! for Xamyab](https://github.com/olinrobotics/hiro/wiki/MoveIt!-for-Xamyab#3-working-with-real-hardware)
+- [Setting up and running the UR5 Robotic Arm](https://github.com/olinrobotics/hiro/wiki/Tutorial:-Setting-up-and-running-the-UR5-Robotic-Arm)
+
+# Original README Content
+
+# ur_modern_driver - Refactored
 
 [![Build Status](https://travis-ci.org/ros-industrial/ur_modern_driver.svg?branch=kinetic-devel)](https://travis-ci.org/ros-industrial/ur_modern_driver)
 [![license - apache 2.0](https://img.shields.io/:license-Apache%202.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)
