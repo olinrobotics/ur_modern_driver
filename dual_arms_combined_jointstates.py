@@ -22,8 +22,8 @@ class CombinedJointStates:
                 rospy.Subscriber(topic, JointState, self.join_states_cb, callback_args=i, queue_size=10)
         self.publisher = rospy.Publisher(publish_topic, JointState, queue_size=10)
 
-    def join_states_cb(self, msg, args):
-        self.msg_list[args[0]] = msg
+    def join_states_cb(self, msg, index):
+        self.msg_list[index] = msg
 
     def publish(self):
         while not rospy.is_shutdown():
